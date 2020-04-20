@@ -1,0 +1,23 @@
+<!-- Author: Subramanian Narayanan -->
+<!-- TODO: Add your HTML for the '/' route here -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Covid 19 data website</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1><font face="Robotostrong" color="blue">Hello, Alberta !</font></h1>
+
+    <p>The date and time on the server is: {{ time }}.</p>
+
+    <h1><font face="Robotostrong" color="blue">Datasets available:</font></h1>
+    <p>
+    {% for ds in datasets %}
+    <a href={{ url_for('dataset', name=ds) }}> {{ ds }} </a>  
+    {% endfor %}
+    </p>
+  </body>
+</html>

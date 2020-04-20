@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Graph</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1><font face="Robotostrong" color="blue">Graph of {{ txtx }}</font></h1>
+    <p>
+    {{ plot|safe }}
+    </p>
+    <p><a href={{url_for('dataset', name=name)}}> Back to {{name}}</a></p>
+  </body>
+</html>

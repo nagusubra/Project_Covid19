@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dataset values </title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <p><a href='/'>Back to Main</a></p>
+    <h1><font face="Robotostrong" color="blue">Plot Various Graphs of {{name}}</font></h1>
+    <p>
+      <a href={{ url_for('plot_graph1', name=name) }}> Daily new infections as a function of time as a barplot </a>
+    </p>
+    <p>
+      <a href={{ url_for('plot_graph2', name=name) }}> Total infections as a function of time as a lineplot </a>
+    </p>
+    <p>
+      <a href={{ url_for('plot_graph3', name=name) }}> Total infections (x-axis) and daily new infections smoothed with moving average (y-axis) on a log-log plot</a>
+    </p>
+    <h1><font face="Robotostrong" color="blue">Values from {{ name }} data</font></h1>
+    {{ dataset|safe }}
+  </body>
+</html>
