@@ -4,6 +4,7 @@ Author: Subramanian Narayanan
 # Problem statement
 Given the current situation, using COVID-19 data and visualization to understand the effects and spread of COVID-19 in Alberta
 
+Data from : https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 
 In the `data` sub-directory, you will find `measurements.db`, an Sqlite database with daily counts of new infections in Alberta. In the `tools` sub-directory, there are two Python programs that illustrate:
 - how to read values from this database and produce plots, as well as
@@ -12,6 +13,8 @@ In the `data` sub-directory, you will find `measurements.db`, an Sqlite database
 The first two plots, barchart and lineplot, are often seen in the media. The log-log plot is a format to better understand if we reached the hight of the wave, and was proposed in this video [Minutephysics - How To Tell If We're Beating COVID-19](https://www.youtube.com/watch?v=54XLXg4fYsc). Here are examples from produced by `tools/covid_plot.py`:
 ![](figure1.png)
 ![](figure2.png)
+
+
 
 # How to run this program
 Instructions to run the program : 

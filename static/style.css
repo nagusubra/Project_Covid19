@@ -1,13 +1,13 @@
 /* Author: Subramanian Narayanan */
-/* TODO: Add your styles here */
+
 body {
-    background: rgb(14, 209, 160);
+    background-color: rgb(255, 255, 255);
     width: 800px;
     margin: auto;
 }
 
 h1 {
-    color: blue;
+    color: rgb(16, 68, 212);
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ padding: 5px;
 border-left: none ;
 border-right: none ;
 color: rgb(58, 71, 247);
-background-color: rgb(127, 108, 231);
+background-color: rgb(107, 32, 42);
 }
 .dataframe td {
 border-bottom: 1px solid black;
